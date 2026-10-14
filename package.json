@@ -1,0 +1,104 @@
+{
+  "name": "postcss-custom-properties-prefix",
+  "version": "0.0.0",
+  "description": "Prefix CSS custom properties (CSS variables) with PostCSS.",
+  "keywords": [
+    "css",
+    "css-variables",
+    "custom-properties",
+    "postcss",
+    "postcss-plugin",
+    "prefix"
+  ],
+  "bugs": {
+    "url": "https://github.com/ColoristLab/postcss-custom-properties-prefix/issues"
+  },
+  "license": "MIT",
+  "author": "ajiho",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ColoristLab/postcss-custom-properties-prefix.git"
+  },
+  "funding": "https://www.lujiahao.com/sponsor",
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "publishConfig": {
+    "tag": "latest"
+  },
+  "scripts": {
+    "prepare": "simple-git-hooks",
+    "fmt": "oxfmt",
+    "lint": "oxlint",
+    "lint:fix": "pnpm run lint --fix",
+    "size": "size-limit",
+    "clean": "rimraf dist",
+    "tsdown": "tsdown",
+    "build": "run-s clean tsdown size",
+    "dev": "pnpm run tsdown --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest --coverage",
+    "test:ui": "pnpm run test --ui",
+    "coverage": "vitest run --coverage",
+    "publint": "publint",
+    "commitlint": "commitlint -e -V",
+    "check": "run-s lint typecheck coverage build publint",
+    "release": "releaseasy"
+  },
+  "dependencies": {
+    "postcss-value-parser": "^4.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.3",
+    "@commitlint/config-conventional": "^21.2.3",
+    "@commitlint/types": "^21.2.3",
+    "@size-limit/preset-small-lib": "^14.2.0",
+    "@types/node": "^26.6.5",
+    "@vitest/coverage-v8": "^5.0.4",
+    "@vitest/ui": "^5.0.4",
+    "npm-run-all2": "^9.0.3",
+    "oxfmt": "^0.72.0",
+    "oxlint": "^1.88.0",
+    "postcss": "^8.5.30",
+    "publint": "^0.3.25",
+    "releaseasy": "^0.1.1",
+    "rimraf": "^6.1.3",
+    "simple-git-hooks": "^2.14.0",
+    "size-limit": "^14.2.0",
+    "tsdown": "^0.23.1",
+    "typescript": "6.0.3",
+    "vitest": "^5.0.4"
+  },
+  "peerDependencies": {
+    "postcss": "^8.5.30"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "pnpm commitlint",
+    "pre-commit": "pnpm check"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.11.2",
+      "onFail": "download"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "^22.22.3 || ^24.16.0 || >=26.3.0",
+      "onFail": "error"
+    }
+  },
+  "packageManager": "pnpm@12.11.2+sha512.25a51652a196785af5f28bda6dfe8dc582ebefa4ac1d180221ce1390231c5fb76637822ea4b6e4633ce74acdcb0a77f725af11bad38177fdeddaee818a955cb9"
+}
