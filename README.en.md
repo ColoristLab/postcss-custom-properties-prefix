@@ -96,6 +96,6 @@ Regular expressions are matched against both the full name (e.g. `--legacy-color
 ## Local Development
 
 ```bash
-npm install
-npm test
+pnpm install
+pnpm test
 ```

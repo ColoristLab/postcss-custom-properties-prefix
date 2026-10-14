@@ -96,6 +96,6 @@ prefixCustomProperties({
 ## 本地开发
 
 ```bash
-npm install
-npm test
+pnpm install
+pnpm test
 ```
