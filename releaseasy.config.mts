@@ -12,5 +12,7 @@ export default {
   },
   hooks: {
     "before:init": "pnpm check",
+    "after:changelog": "oxfmt CHANGELOG.md",
+    "after:bump": "oxfmt package.json",
   },
 } satisfies UserConfig;
