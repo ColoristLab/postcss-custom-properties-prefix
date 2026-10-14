@@ -1,6 +1,6 @@
 {
   "name": "postcss-custom-properties-prefix",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Prefix CSS custom properties (CSS variables) with PostCSS.",
   "keywords": [
     "css",
