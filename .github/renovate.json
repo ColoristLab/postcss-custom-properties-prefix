@@ -25,6 +25,14 @@
     {
       "matchPackageNames": ["/oxlint/"],
       "labels": ["linting"]
+    },
+    {
+      "description": "Automerge non-major dependency updates",
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true,
+      "automergeStrategy": "squash"
     }
   ]
 }
