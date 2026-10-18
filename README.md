@@ -2,12 +2,11 @@
 
 [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-048754?logo=buymeacoffee)](https://www.lujiahao.com/sponsor)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](https://www.tslang.org)
+[![npm version](https://img.shields.io/npm/v/postcss-custom-properties-prefix)](https://www.npmjs.com/package/postcss-custom-properties-prefix)
 [![Test](https://img.shields.io/github/actions/workflow/status/ColoristLab/postcss-custom-properties-prefix/tests.yml?label=Test&logo=github&style=flat-square&branch=main)](https://github.com/ColoristLab/postcss-custom-properties-prefix/actions/workflows/tests.yml)
 [![codecov](https://codecov.io/github/ColoristLab/postcss-custom-properties-prefix/graph/badge.svg?token=YR846BMB6Y)](https://codecov.io/github/ColoristLab/postcss-custom-properties-prefix)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ColoristLab/postcss-custom-properties-prefix/blob/main/LICENSE)
 ---
-
-简体中文 | [English](./README.en.md)
 
 为 CSS 自定义属性（CSS Variables）统一添加前缀的 PostCSS 插件。
 
