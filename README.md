@@ -8,7 +8,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ColoristLab/postcss-custom-properties-prefix/blob/main/LICENSE)
 ---
 
-为 CSS 自定义属性（CSS Variables）统一添加前缀的 PostCSS 插件。
+为 CSS 自定义属性添加统一前缀的 PostCSS 插件
 
 ## 安装
 
