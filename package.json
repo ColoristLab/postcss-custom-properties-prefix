@@ -66,8 +66,8 @@
     "@commitlint/types": "^21.2.3",
     "@size-limit/preset-small-lib": "^14.2.0",
     "@types/node": "^26.6.5",
-    "@vitest/coverage-v8": "^5.0.4",
-    "@vitest/ui": "^5.0.4",
+    "@vitest/coverage-v8": "^5.0.5",
+    "@vitest/ui": "^5.0.5",
     "npm-run-all2": "^9.0.3",
     "oxfmt": "^0.72.0",
     "oxlint": "^1.88.0",
@@ -79,7 +79,7 @@
     "size-limit": "^14.2.0",
     "tsdown": "^0.23.1",
     "typescript": "6.0.3",
-    "vitest": "^5.0.4"
+    "vitest": "^5.0.5"
   },
   "peerDependencies": {
     "postcss": "^8.5.30"
