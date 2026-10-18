@@ -39,6 +39,8 @@ jobs:
 
       - name: Generate changelog for the latest release
         run: pnpm release changelog --config cliff.toml -o CHANGELOG-LATEST.md -vv --latest --strip header
+        env:
+          GITHUB_REPO: ${{ github.repository }}
 
       - name: Github Release
         uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3
