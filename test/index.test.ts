@@ -205,5 +205,28 @@ describe("postcss-custom-properties-prefix", () => {
     it("应该正确处理空 CSS", async () => {
       await expect(transform("", { prefix: "app-" })).resolves.toBe("");
     });
+
+    it("应该忽略无效的忽略规则类型并正常添加前缀", async () => {
+      const css = ":root { --color: red; }";
+
+      await expect(
+        transform(css, {
+          prefix: "app-",
+          ignore: [123 as unknown as string],
+        }),
+      ).resolves.toBe(":root { --app-color: red; }");
+    });
+
+    it("应该保留 var() 中只有注释且没有有效属性名称的内容", async () => {
+      const css = ".button { color: var(/* comment */); }";
+
+      await expect(transform(css, { prefix: "app-" })).resolves.toBe(css);
+    });
+
+    it("应该保留没有参数的 var() 函数", async () => {
+      const css = ".button { color: var(); }";
+
+      await expect(transform(css, { prefix: "app-" })).resolves.toBe(css);
+    });
   });
 });
