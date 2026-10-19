@@ -61,8 +61,8 @@
     "postcss-value-parser": "^4.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^21.2.3",
-    "@commitlint/config-conventional": "^21.2.3",
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
     "@commitlint/types": "^21.2.3",
     "@size-limit/preset-small-lib": "^14.2.0",
     "@types/node": "^26.6.5",
