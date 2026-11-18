@@ -70,7 +70,7 @@
     "@vitest/ui": "^5.1.0",
     "npm-run-all2": "^9.0.4",
     "oxfmt": "^0.79.0",
-    "oxlint": "^1.93.0",
+    "oxlint": "^1.94.0",
     "postcss": "^8.5.33",
     "publint": "^0.3.25",
     "releaseasy": "^0.1.1",
