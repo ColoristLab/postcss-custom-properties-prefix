@@ -71,7 +71,7 @@
     "npm-run-all2": "^9.1.0",
     "oxfmt": "^0.80.0",
     "oxlint": "^1.95.0",
-    "postcss": "^8.5.33",
+    "postcss": "^8.5.34",
     "publint": "^0.3.25",
     "releaseasy": "^0.1.1",
     "rimraf": "^6.1.4",
